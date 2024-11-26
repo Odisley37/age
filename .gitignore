@@ -1,0 +1,16 @@
+# Ambiente virtual
+venv/
+.env
+
+# Arquivos de log
+*.log
+*.out
+*.err
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+__pycache__/
+*.py[c
