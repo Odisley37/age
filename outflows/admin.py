@@ -1,3 +1,9 @@
-from django.contrib import admin
+from django.apps import AppConfig
 
-# Register your models here.
+
+class OutflowsConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'outflows'
+
+    def ready(self):
+        import outflows.signals  # noqa: F401
